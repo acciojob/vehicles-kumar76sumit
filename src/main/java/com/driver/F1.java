@@ -8,6 +8,15 @@ public class F1 extends Car {
         super("Lambo",4,2,6,true,"Racing",2);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public boolean isManual() {
+        return isManual;
+    }
+
     public void accelerate(int rate){
         int newSpeed = getCurrentSpeed()+rate; //set the value of new speed by using currentSpeed and rate
         /**
